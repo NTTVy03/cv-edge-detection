@@ -1,11 +1,13 @@
 ﻿#include <iostream>
-#include "opencv2\core.hpp"
+#include "../Header/AppController.h"
 
 // Thử chức năng của OpenCV: đọc 1 ảnh màu/xám và trích xuất đặc trưng cạnh
 
-int main()
+int main(int argc, char** argv)
 {
-    std::cout << "Hello World!\n";
-    char ch;
-    std::cin >> ch;
+    AppController* app = new AppController();
+    app->run(argc, argv);
+
+    waitKey();
+    return 0;
 }

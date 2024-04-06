@@ -88,9 +88,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -119,9 +120,10 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>C:\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,19 +136,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\21120168.cpp" />
+    <ClCompile Include="Source\AppController.cpp" />
     <ClCompile Include="Source\Canny.cpp" />
     <ClCompile Include="Source\EdgeExtractor.cpp" />
     <ClCompile Include="Source\Factory.cpp" />
     <ClCompile Include="Source\Laplace.cpp" />
+    <ClCompile Include="Source\Mask.cpp" />
     <ClCompile Include="Source\OpenCV.cpp" />
     <ClCompile Include="Source\Prewitt.cpp" />
     <ClCompile Include="Source\Sobel.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Header\AppController.h" />
     <ClInclude Include="Header\Canny.h" />
     <ClInclude Include="Header\EdgeExtractor.h" />
     <ClInclude Include="Header\Factory.h" />
     <ClInclude Include="Header\Laplace.h" />
+    <ClInclude Include="Header\Mask.h" />
     <ClInclude Include="Header\OpenCV.h" />
     <ClInclude Include="Header\Prewitt.h" />
     <ClInclude Include="Header\Sobel.h" />
